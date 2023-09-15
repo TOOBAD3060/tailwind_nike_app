@@ -9,7 +9,7 @@
    return (
      <main className='relative'>
         <Nav />
-        <section className='xl:padding-1 
+        <section className='xl:padding-l 
         wide:padding-r padding-b'>
           <Hero />
         </section>
