@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Button = ({label, iconURL, backgroundColor, textColor, 
-borderColor}) => {
+borderColor, fullWidth}) => {
   return (
     
     <button className= {`flex justify-center
@@ -11,7 +11,7 @@ borderColor}) => {
       ${backgroundColor 
         ? `${backgroundColor} ${textColor} ${borderColor} `
         : 'bg-coral-red  text-white border-coral-red' }
-    rounded-full
+    rounded-full ${fullWidth && "w-full" }
     `} >
         {label}
         {iconURL && <img src={iconURL} 
